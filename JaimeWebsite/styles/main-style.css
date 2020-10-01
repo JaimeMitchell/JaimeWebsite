@@ -1,0 +1,172 @@
+/* === 
+ * body, .flex-container and .flex-container>*  
+ * These set-up the flexbox framework of the page...
+ * Probably best to leave these three items alone.
+ * ===
+ */
+
+body {background-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container>* {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+
+/*
+ * The next few sections control the look of the page's structure. 
+ * 
+ * The page is designed 'mobile-first' as this is best practice in 2020.
+ * So the styles for the appearance on a mible device is defined first. 
+ */
+
+.header {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: whitesmoke;
+   
+}
+
+.nav {
+    background-color: rgb(29, 29, 29);
+    text-align: left;
+    -webkit-flex: 1 auto;
+    flex: 1 auto;
+}
+
+.article {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+    color: black;
+}
+
+.footer {
+    background-color: black;
+    color:  rgba(255, 255, 255, 0.5);
+    font-size: 75%
+}
+
+
+/* === This next section controls the appearance on tablets/medium-size screens === */
+
+@media all and (min-width: 768px) {
+    .nav {
+        text-align: left;
+        -webkit-flex: 1 auto;
+        flex: 1 auto;
+        -webkit-order: 1;
+        order: 1;
+    }
+    .article {
+        -webkit-flex: 5 0px;
+        flex: 5 0px;
+        -webkit-order: 2;
+        order: 2;
+    }
+    .footer {
+        -webkit-order: 3;
+        order: 3;
+    }
+}
+
+
+/* === This next section controls the appearance on computers/large screens === */
+
+@media all and (min-width: 1152px) {
+    .flex-container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1122px;
+    }
+    .nav {
+        text-align: left;
+        -webkit-flex: 1 auto;
+        flex: 1 auto;
+        -webkit-order: 1;
+        order: 1;
+    }
+    .article {
+        -webkit-flex: 5 0px;
+        flex: 5 0px;
+        -webkit-order: 2;
+        order: 2;
+    }
+    .footer {
+        -webkit-order: 3;
+        order: 3;
+        max-width: 1122px;
+    }
+}
+
+
+/* ===
+ * These are for the navigation and footer item styles.
+ *
+ * These are elements that will be on every page. Changing them 
+ * will definitely have ripple effects.
+ * 
+ * === 
+ */
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav button {
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: whitesmoke;
+    padding: 10px;
+    margin: 4px auto;
+    width: 70%;
+    text-align: center;
+    display: list-item;
+    list-style-type: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+nav button:hover {
+    background-color: whitesmoke;
+    color: black;
+    transition-duration: 0.4s;
+}
+
+#onpage {
+    /* Use this ID on a button to show it as the page you're currently on. */
+    background-color: whitesmoke;
+    color:black;
+}
+
+#license {
+    float: right;
+    opacity: 50%;
+}
+
+
+/* ===
+ * These are for styles that will be useful across the 
+ * whole website (all pages).
+ *
+ * This would be a good place to define classes and id's 
+ * that describe appearances you'll want to have occasionally 
+ * around your website.
+ * ===
+ */
+
+.monospace {
+    font-family: "Montserrat", Montserrat, sans-serif;
+}
