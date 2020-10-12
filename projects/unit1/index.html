@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Week 1</title>
+    <link rel="icon" type="image/png" href="../styles/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/main-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+
+<body>
+    <bg></bg>
+    <div class="flex-container">
+        <header class="header">
+            <h1>Website Build pt. 1</h1>
+            <!-- Change the Webpage Title to fit the particular topic -->
+        </header>
+        <nav class="nav">
+            <a href='../../'><button>Home</button></a>
+            <a href='../../about-me.html'><button>About Me</button></a>
+            <a href='../../project-nav.html'><button>Projects</button></a>
+            <p> <text-align><center><font color="white"> Week 1 </center></text-align></font></p>
+            <a href='../../final.html'><button>Final Project</button></a>
+        </nav>
+        <article class="article">
+            <!-- Start here -->
+
+            <p>My only website building experience was Wix and Coroflot. After putting it off for about 20 years I finally built a website 
+                with HTML and CSS this week.
+                I also tried my hand at Wordpress. 
+                <p>What I learned:
+                <ul>
+                <li>I found HTML & CSS less frustrating and easy to problem solve through than WordPress or Wix. 
+                    It’s consistent and does exactly what I tell it to, so the mistakes tend to be mine, 
+                    such as linking or pointing to files incorrectly (as shown below).
+                <p>
+                <li>FAIL! 😦 
+                   </p><img src="project-images/IMG_1457.JPG"alt="fail" style="width:800px"></a>
+        <p>SUCCESS! 😊
+        </p>
+            <img src="project-images/IMG_1459.JPG"alt="success" style="width:800px"></a>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/__aChdtf8rg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li>With WordPress/Wix I found it to be harder to move layout around and navigate basic controls, but easier to make it look pretty.
+       <p></p>
+            <li>Any failure to make things work was mainly from their clunky, buggy, difficult interface, or the withholding of features unless I pay to play.
+        </li>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/5KtzUMtt5TU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <li>Wix is my preferred site if I’m going the point/click/drag/waste money route. It helped me get my feet wet in web design, <a href='https://jaimemitchell100.wixsite.com/jaime100'target="_blank">shown here.</a>
+         <p><li>Going on youtube to watch tutorials, visiting W3schools.com and spending an hour getting coached by the program's instructor, Corey Rice, helped build on my DIY confidence.</ul></p>
+    <hr>
+    <p>Git and Github had been something I've had a 10 minute previous experience with. 
+        As part of my Corona lock down I bought a Raspberry Pi and Elegoo set (Arduino kit knockoff),
+        joined a free online class (CS50) to learn more about computer science.
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ozckjxz_v8A" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+    <p>The class required Github to turn in assignments but I didn't really get git's gest.
+        Not until last week, when the desktop I was using for this website died in it's sleep. The one 
+        time in 15 years I didn't back up my work compulsively...
+
+    <p>What I learned in the process:
+    <ul>
+        <li>When the desktop died the Raspberry pi took over the project.
+            I found a knockoff version of Visual Studio Code for the Pi <a rel="noreferrer noopener" href="http://code.headmelted.com" target="_blank"><b>here.</b></a></p>
+        <p>
+        <li>A repository is the folder of my website's code</li>
+        <p>
+        <li>Git automatically takes snapshots of everything I do to my repositoy, 
+            like a spy tracking my every move.
+            Or like Adobe Lightroom's history.
+            <p>
+        <li>I have to have my files in the correct location (the Pi Home folder for me) 
+            then initialize Git to that folder.
+            If Git can't see the file clearly it will ignore me and tell me I'm making 
+            fatal errors which felt a little passive
+            aggresive...
+            <p>
+    <li>This happened because I tried to set up Git with SSH on my Pi, and that didn't go over well 
+        because I didn't understand
+        how to use either Git or SSH. ...Baby steps... 😦 
+    <p><img src='project-images/git3.jpg' alt=":(" style="width:800px"></a>
+    <p><img src='project-images/git1.jpg' alt=":(" style="width:800px"></a>
+     The correct place to initialize Git! 😊<p><img src='project-images/gitjaime.jpg' alt="fail" 
+        style="width:400px"></a>
+        <p>Corey showed me how to use SSH, seperate from Git, to control a "headless" Pi. 
+            <img src="project-images/sshcorey.jpg"alt="success" style="width:800px"></a>
+        <li>Once Git's set up to Github, the "remote" repository, I need to tell Git when I want to 
+            commit any changes to my remote repository (Github) from the local repository (Rasperry pi).   </li>
+            <p>
+        <li>Github stores the repository in the sky above like a little colicky cherub angel that 
+            takes time to respond. Hard refreshes, 5 minutes of patience, and walking away works.</li>
+            <p>
+        <li>Umm, I have to save before I can even think about adding and committing changes to my Repository. 
+        <p>
+            <li>Then Git needs to be spoken to like a puppy in the Command Line. The tone should be direct, sequential and 
+                simple. "git add. git commit -m ("comment"). git push origin main..."
+            
+        <p>Ctrl+S! You know this... 😦 
+       <img src="project-images/git2.jpg"alt=":(" style="width:800px"></a>
+       
+       <p><li>As a last step, I have to enter my user name and password everytime, which is a bit tedious for 2020. 
+           There's a quicker way to push through the front door with Shelly's secret handshake (SSH). 
+           I'll attempt that next week and save/add/commit/push that process here.
+       <img src="project-images/git5.jpg"alt=":)" style="width:800px"></a>
+       <p>
+        <li>I also learned commands that help me keep track of what I'm doing such as "git status"&"git log".
+            <p>...with the added bonus of learning how to take a screenshot in terminal. 
+                As you can see, the screenshot is unreadable (unless opened in a new window), I can't control
+                where terminal takes the screenshot, so I'm going to figure out the GUI-way when time permits.
+            </p>
+            <img src="project-images/gitlog.png"alt=":)" style="width:800px"></a>
+    <!-- End here -->
+</article>
+<footer class="footer">
+    <p></p>
+    <!-- the liscence below is directly taken from -->
+    <a id="license" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+        <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+    </a>
+            <!-- End here -->
+        </article>
+        <footer class="footer">
+            <p></p>
+            <!-- the liscence below is directly taken from -->
+            <a id="license" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>
