@@ -40,7 +40,7 @@ body {background-color: whitesmoke;
 
 .nav {
     background-color: rgb(29, 29, 29);
-    text-align: rght;
+    text-align: left;
     -webkit-flex: 1 auto;
     flex: 1 auto;
 }
@@ -62,7 +62,7 @@ body {background-color: whitesmoke;
 
 @media all and (min-width: 768px) {
     .nav {
-        text-align: right;
+        text-align: left;
         -webkit-flex: 1 auto;
         flex: 1 auto;
         -webkit-order: 1;
@@ -84,13 +84,13 @@ body {background-color: whitesmoke;
 /* === This next section controls the appearance on computers/large screens === */
 
 @media all and (min-width: 1152px) {
-    .flex-containerss {
+    .flex-container {
         margin-left: auto;
         margin-right: auto;
         max-width: 1122px;
     }
     .nav {
-        text-align: right;
+        text-align: left;
         -webkit-flex: 1 auto;
         flex: 1 auto;
         -webkit-order: 1;
@@ -170,3 +170,10 @@ nav button:hover {
 .monospace {
     font-family: "Montserrat", Montserrat, sans-serif;
 }
+.rotateimg180 {
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
